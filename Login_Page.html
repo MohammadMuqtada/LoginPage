@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css2?family=Lato&display=swap);
+        @import url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap);
+        @import url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined);
+        @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css);
+    </style>
+</head>
+
+<body>
+    <div id="webcrumbs">
+        <div class="flex flex-col md:flex-row h-screen">
+            <div
+                class="md:w-[40%] bg-gradient-to-br from-primary-700 to-primary-900 relative flex items-center justify-center p-8">
+                <div></div>
+                <div class="text-center text-white z-10 max-w-md">
+                    <div class="flex justify-center mb-6"> <svg xmlns="http://www.w3.org/2000/svg"
+                            class="h-12 w-auto text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg> <span class="ml-2 text-2xl font-bold">Yana</span> </div>
+                    <h2 class="text-3xl font-bold mb-3">Welcome to Yana Store</h2>
+                    <p class="opacity-90 mb-8">Your one-stop destination for all your shopping needs</p>
+                    <div class="grid grid-cols-3 gap-3 mb-12">
+                        <div
+                            class="h-20 bg-white/10 rounded-lg flex items-center justify-center backdrop-blur-sm hover:bg-white/20 transition-all">
+                            <span class="material-symbols-outlined text-3xl">shopping_bag</span> </div>
+                        <div
+                            class="h-20 bg-white/10 rounded-lg flex items-center justify-center backdrop-blur-sm hover:bg-white/20 transition-all">
+                            <span class="material-symbols-outlined text-3xl">local_shipping</span> </div>
+                        <div
+                            class="h-20 bg-white/10 rounded-lg flex items-center justify-center backdrop-blur-sm hover:bg-white/20 transition-all">
+                            <span class="material-symbols-outlined text-3xl">support_agent</span> </div>
+                    </div>
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-b from-primary-700/30 to-primary-900/90 z-0"></div>
+                <div class="absolute bottom-6 left-0 w-full text-center text-white/70 text-sm">
+                    <p>© 2023 Yana Online Store. All rights reserved.</p>
+                </div>
+            </div>
+            <div class="flex-1 flex items-center justify-center p-5 md:p-8 lg:p-12 bg-gray-50">
+                <div class="w-full max-w-md">
+                    <div class="mb-8 text-center">
+                        <h1 class="text-2xl md:text-3xl font-bold text-gray-900">Account Access</h1>
+                        <p class="mt-2 text-sm text-gray-600">Login or create a new account to get started</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-8">
+                        <div class="flex border-b border-gray-200"> <button
+                                class="flex-1 py-4 text-center font-medium text-gray-900 bg-white border-b-2 border-primary-600">
+                                Login </button> <button
+                                class="flex-1 py-4 text-center font-medium text-gray-500 hover:text-gray-700 transition-colors">
+                                Sign Up </button> </div>
+                        <div class="p-6">
+                            <form>
+                                <div class="space-y-4">
+                                    <div> <label for="email" class="block text-sm font-medium text-gray-700 mb-1"> Email
+                                        </label> <input type="email" id="email" name="email" autoComplete="email"
+                                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                                            placeholder="your@email.com" required="" /> </div>
+                                    <div> <label for="password" class="block text-sm font-medium text-gray-700 mb-1">
+                                            Password </label>
+                                        <div class="relative"> <input type="password" id="password" name="password"
+                                                autoComplete="current-password"
+                                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                                                placeholder="••••••••" required="" /> <button type="button"
+                                                class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-700">
+                                                <span class="material-symbols-outlined">visibility_off</span> </button>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center"> <input id="remember_me" name="remember_me"
+                                                type="checkbox"
+                                                class="h-4 w-4 text-primary-600 border-gray-300 rounded focus:ring-primary-500" />
+                                            <label for="remember_me" class="ml-2 block text-sm text-gray-700"> Remember
+                                                me </label> </div> <a href="/forgot-password"
+                                            class="text-sm text-primary-600 hover:text-primary-800 transition-colors">
+                                            Forgot password? </a>
+                                    </div>
+                                </div> <button type="submit"
+                                    class="w-full mt-6 py-3 px-4 bg-primary-600 text-white rounded-lg font-medium hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 transform transition-all hover:scale-[1.02] active:scale-[0.98]">
+                                    Sign In </button>
+                            </form>
+                            <div class="mt-8">
+                                <div class="relative">
+                                    <div class="absolute inset-0 flex items-center">
+                                        <div class="w-full border-t border-gray-300"></div>
+                                    </div>
+                                    <div class="relative flex justify-center text-sm"> <span
+                                            class="px-2 bg-white text-gray-500">Or continue with</span> </div>
+                                </div>
+                                <div class="mt-6 grid grid-cols-3 gap-3"> <button
+                                        class="flex justify-center items-center py-2 px-4 border border-gray-300 rounded-lg shadow-sm bg-white hover:bg-gray-50 transition-all">
+                                        <i class="fa-brands fa-google text-xl"></i> </button> <button
+                                        class="flex justify-center items-center py-2 px-4 border border-gray-300 rounded-lg shadow-sm bg-white hover:bg-gray-50 transition-all">
+                                        <i class="fa-brands fa-apple text-xl"></i> </button> <button
+                                        class="flex justify-center items-center py-2 px-4 border border-gray-300 rounded-lg shadow-sm bg-white hover:bg-gray-50 transition-all">
+                                        <i class="fa-brands fa-facebook text-xl"></i> </button> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-xs text-gray-500"> By signing in, you agree to our <a href="/terms"
+                                class="text-primary-600 hover:underline ml-1">Terms of Use</a> <span
+                                class="mx-1">&amp;</span> <a href="/privacy"
+                                class="text-primary-600 hover:underline">Privacy Policy</a> </p>
+                        <p class="mt-4 text-sm text-gray-600"> Need help? <a href="/contact"
+                                class="text-primary-600 hover:underline">Contact Support</a> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            content: ["./src/**/*.{html,js}"],
+            theme: { "name": "Bluewave", "fontFamily": { "sans": ["Open Sans", "ui-sans-serif", "system-ui", "sans-serif", "\"Apple Color Emoji\"", "\"Segoe UI Emoji\"", "\"Segoe UI Symbol\"", "\"Noto Color Emoji\""] }, "extend": { "fontFamily": { "title": ["Lato", "ui-sans-serif", "system-ui", "sans-serif", "\"Apple Color Emoji\"", "\"Segoe UI Emoji\"", "\"Segoe UI Symbol\"", "\"Noto Color Emoji\""], "body": ["Open Sans", "ui-sans-serif", "system-ui", "sans-serif", "\"Apple Color Emoji\"", "\"Segoe UI Emoji\"", "\"Segoe UI Symbol\"", "\"Noto Color Emoji\""] }, "colors": { "neutral": { "50": "#f7f7f7", "100": "#eeeeee", "200": "#e0e0e0", "300": "#cacaca", "400": "#b1b1b1", "500": "#999999", "600": "#7f7f7f", "700": "#676767", "800": "#545454", "900": "#464646", "950": "#282828" }, "primary": { "50": "#f3f1ff", "100": "#e9e5ff", "200": "#d5cfff", "300": "#b7a9ff", "400": "#9478ff", "500": "#7341ff", "600": "#631bff", "700": "#611bf8", "800": "#4607d0", "900": "#3c08aa", "950": "#220174", "DEFAULT": "#611bf8" } } }, "fontSize": { "xs": ["12px", { "lineHeight": "19.200000000000003px" }], "sm": ["14px", { "lineHeight": "21px" }], "base": ["16px", { "lineHeight": "25.6px" }], "lg": ["18px", { "lineHeight": "27px" }], "xl": ["20px", { "lineHeight": "28px" }], "2xl": ["24px", { "lineHeight": "31.200000000000003px" }], "3xl": ["30px", { "lineHeight": "36px" }], "4xl": ["36px", { "lineHeight": "41.4px" }], "5xl": ["48px", { "lineHeight": "52.800000000000004px" }], "6xl": ["60px", { "lineHeight": "66px" }], "7xl": ["72px", { "lineHeight": "75.60000000000001px" }], "8xl": ["96px", { "lineHeight": "100.80000000000001px" }], "9xl": ["128px", { "lineHeight": "134.4px" }] }, "borderRadius": { "none": "0px", "sm": "6px", "DEFAULT": "12px", "md": "18px", "lg": "24px", "xl": "36px", "2xl": "48px", "3xl": "72px", "full": "9999px" }, "spacing": { "0": "0px", "1": "4px", "2": "8px", "3": "12px", "4": "16px", "5": "20px", "6": "24px", "7": "28px", "8": "32px", "9": "36px", "10": "40px", "11": "44px", "12": "48px", "14": "56px", "16": "64px", "20": "80px", "24": "96px", "28": "112px", "32": "128px", "36": "144px", "40": "160px", "44": "176px", "48": "192px", "52": "208px", "56": "224px", "60": "240px", "64": "256px", "72": "288px", "80": "320px", "96": "384px", "px": "1px", "0.5": "2px", "1.5": "6px", "2.5": "10px", "3.5": "14px" } },
+            plugins: [],
+            important: '#webcrumbs'
+        };
+    </script>
+
+</body>
+
+</html>
