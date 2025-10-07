@@ -35,3 +35,4 @@ git clone https://github.com/yourusername/login-signup-page.git
 cd login-signup-page
 npm install
 npm run dev
+http://localhost:3000/auth
